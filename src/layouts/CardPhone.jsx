@@ -26,10 +26,10 @@ const CardPhone = ({name,description,img,price}) => {
   <CardFooter className='card-footer'>
     <ButtonGroup spacing='2'>
       <Button variant='solid' colorScheme='green'>
-        Buy now
+        Ver Producto
       </Button>
       <Button variant='ghost' colorScheme='blue'>
-        Add to cart
+        Agregar al Carrito
       </Button>
     </ButtonGroup>
   </CardFooter>

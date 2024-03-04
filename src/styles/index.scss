@@ -14,6 +14,16 @@ $ColorTitle: rgb(212, 162, 0);
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
 
 header{
     width: 100%;
@@ -22,6 +32,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
     z-index: 200;
@@ -40,9 +51,10 @@ header{
         padding: 10px;
         display: flex;
         align-items: center;
+        position: fixed;
         justify-content: space-around;
         height: 70px;
-        border-bottom: 1px solid white;
+        transition: .3s ease-in;
         h1{
             font-family: $FontTitles;
             color: $ColorTitle;
@@ -99,7 +111,7 @@ header{
 
 .item-seccion{
     width: 100%;
-    height: 1400px;
+    height: 100%;
     display: grid;
     grid-column: 1fr;
     grid-template-rows: 600px 1fr 800px;
@@ -201,5 +213,231 @@ header{
     }
     .card-footer{
         border: 1px solid rgb(190, 190, 190);
+    }
+}
+
+.PC-containers{
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    .card-pc{
+        .img-card{
+            margin-right: 10px;
+        }
+    }
+}
+
+.contact-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../assets/contactBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .contact-text{
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: $ColorTitle;
+            font-family: $FontTitles;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p{
+            color: $NavColor;
+            font-family: $FontBody;
+        }
+    }
+
+    form{
+        width: 400px;
+        height: 90%;
+        background-color: white;
+        border-radius: 5px;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 8px 0px 0px rgba(255, 255, 255, 0.829);
+        .form-group{
+            display: flex;
+            width: 90%;
+        }
+        textarea{
+            width: 90%;
+            margin-top: 40px;
+        }
+        .button-enviar{
+            padding: 5px 20px;
+            background-color: green;
+            margin-top: 30px;
+            border-radius: 5px;
+            color: $NavColor;
+            cursor: pointer;
+            transition: .5s ease;
+            &:hover{
+                background-color: rgb(0, 95, 0);
+                color: $NavColor;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 550px;
+    margin-bottom: -25px;
+    top: 0;
+    bottom: 0;
+    .footer-header {
+      width: 100%;
+      height: 90%;
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      grid-row: 1fr;
+      background-color: rgb(27, 27, 27);
+      .footer-info {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-family: $FontTitles;
+          color: $ColorTitle;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        p {
+          font-family: $FontBody;
+          color: #a09787;
+          margin-left: 10px;
+          padding: 5px 30px;
+        }
+      }
+      .footer-sociales {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-family: $FontTitles;
+          color: $ColorTitle;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        .social {
+          width: 80%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          .icon-social {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+          a{
+              color: #a09787;
+              font-family: $FontBody;
+              text-decoration: none;
+              transition: .3s ease;
+              &:hover{
+                  color: white;
+              }
+          }
+        }
+      }
+      .footer-direccion {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-family: $FontTitles;
+          color: $ColorTitle;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        .social{
+          width: 80%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          .icon-encuentranos {
+              width: 30px;
+              height: 30px;
+              margin-right: 10px;
+          }
+          p{
+              font-family: $FontBody;
+              color: #a09787;
+          }
+        }
+      }
+    }
+    .footer-derechos {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      background-color: rgb(17, 17, 17);
+      p{
+          font-family: $FontBody;
+          color: #a09787;
+      }
+    }
+}
+
+.sucursales-container{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    h2{
+        display: flex;
+        font-family: $FontTitles;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 5px;
+        img{
+            width: 52px;
+            height: 60px;
+        }
+    }
+    .sucursal{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        margin-top: 50px;
+        img{
+            width: 40%;
+        }
+        .map{
+            width: 60%;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

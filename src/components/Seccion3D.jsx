@@ -1,5 +1,6 @@
 import Spline from '@splinetool/react-spline';
 import Phones from '../components/Phones'
+import Computers from './Computers';
 
 const Seccion3D = () => {
   return (
@@ -25,6 +26,7 @@ const Seccion3D = () => {
         </div>
         </article>
 
+        <Computers/>
     </section>
   )
 }
