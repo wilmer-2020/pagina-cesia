@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef,useState} from "react";
 import {
     Modal,
     ModalOverlay,
@@ -16,7 +16,11 @@ import {
 
 const ModalWhatsapp = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  const [text, setText] = useState('')
+  const getData = (e) =>{
+    setText(e.target.value)
+  }
+  const URL=`https://wa.me/96321981?text=${text} `
   const initialRef = useRef(null)
   const finalRef = useRef(null)
 
@@ -41,14 +45,19 @@ const ModalWhatsapp = () => {
           <ModalBody pb={6}>
             <FormControl>
               <FormLabel>Escribe tu mensaje</FormLabel>
-              <Input ref={initialRef} placeholder='Mensaje' />
+              <Input ref={initialRef} placeholder='Mensaje' onChange={getData} value={text}/>
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme='green' mr={3} onClick={onClose}>
+            <a href={URL}
+              target="_blank"
+              rel="noreferrer"
+              className="button-modal"
+              style={{backgroundColor:'green', padding:'5px 15px', color:'white', borderRadius:'5px'}}
+              onClick={onClose}>
               Enviar
-            </Button>
+            </a>
           </ModalFooter>
         </ModalContent>
       </Modal>

@@ -23,12 +23,12 @@ const Footer = () => {
 
         <div className="social">
         <img src={iconFacebook} alt="" className="icon-social"/>
-          <a href="">NECTEC</a>
+          <a href="https://www.facebook.com/nettechnlapaz?mibextid=PlNXYD" target="_blacnk">NECTEC</a>
         </div>
 
         <div className="social">
           <img src={iconInstagram} alt="" className="icon-social"/>
-          <a href="">NECTEC</a>
+          <a href="https://www.instagram.com/nettecoutlet?igsh=MTNxZnJqN21qa29kMQ==" target="_blanck">Nettec Outlet</a>
         </div>
 
         <div className="social">
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="social">
         <img src={iconEmail} alt="" className="icon-encuentranos"/>
-          <p >brisasdelcampo@gmail.com</p>
+          <a href="mailto:aldredomontes1970@gmail.com" style={{color:"#a09787"}}>brisasdelcampo@gmail.com</a>
         </div>
         
       </div>

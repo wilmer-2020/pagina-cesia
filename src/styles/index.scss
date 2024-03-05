@@ -200,10 +200,11 @@ header{
         margin-top: 100px;
         .PC-obj{
             width: 60%;
-            height: 100%;
+            height: 150%;
             display: flex;
             align-items: center;
             justify-content: center;
+            transform: translateY(-150px);
         }
         .PC-text{
             width: 40%;
@@ -380,7 +381,7 @@ header{
           height: 30px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           margin-top: 20px;
           .icon-social {
             width: 30px;
@@ -414,7 +415,7 @@ header{
           height: 30px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           margin-top: 20px;
           .icon-encuentranos {
               width: 30px;

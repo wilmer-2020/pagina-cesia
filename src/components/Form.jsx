@@ -4,9 +4,9 @@ import SelectForm from "../layouts/SelectForm";
 import { useToast } from '@chakra-ui/react'
 
 const Form = () => {
-  const toast = useToast()
+  const toast = useToast();
   return (
-    <form>
+    <form className='form'>
       <InputForm label={'Nombre'} placeholder={'ingrese su nombre'}/>
       <InputForm label={'telefono'} placeholder={'ingrese su telefono'}/>
       <SelectForm label={"Sucursal"} option1={'NECTEC-Comayagua'} option2={'NECTEC-La Paz'}/>
@@ -18,7 +18,8 @@ const Form = () => {
       />
       <input type="submit" value="ENVIAR" className='button-enviar'
         onClick={(e) => {
-          e.preventDefault()
+          e.preventDefault();
+          document.querySelector('.form').reset()
           const examplePromise = new Promise((resolve) => {
           setTimeout(() => resolve(200), 3000)
         })
