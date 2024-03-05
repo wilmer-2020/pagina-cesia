@@ -27,6 +27,8 @@ header {
   position: relative;
   overflow: hidden;
   z-index: 200;
+  display: flex;
+  flex-direction: column;
 }
 header::before {
   width: 100%;
@@ -46,7 +48,8 @@ header nav {
   position: fixed;
   justify-content: space-around;
   height: 70px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
+  z-index: 500;
 }
 header nav h1 {
   font-family: "Poppins";
@@ -98,6 +101,39 @@ header .wave {
   bottom: 0;
   transform: translateY(91px);
   border: none;
+}
+header .text-header {
+  width: 50%;
+  padding: 80px;
+  transform: translateY(120px) translateX(120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .text-header h3 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(212, 162, 0);
+}
+header .text-header p {
+  color: #fffdf8;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+header .main-phone {
+  transform: scale(0.7) translateX(450px) translateY(-520px);
+}
+header .button-modal {
+  color: white;
+  margin-top: 20px;
+  width: 125px;
+}
+header .button-modal img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
 
 .item-seccion {
@@ -282,7 +318,7 @@ header .wave {
   height: 300px;
   display: flex;
   flex-direction: column;
-  margin-top: 550px;
+  margin-top: 600px;
   margin-bottom: -25px;
   top: 0;
   bottom: 0;

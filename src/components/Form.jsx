@@ -1,8 +1,10 @@
 import { Textarea } from '@chakra-ui/react'
 import InputForm from "../layouts/InputForm";
 import SelectForm from "../layouts/SelectForm";
+import { useToast } from '@chakra-ui/react'
 
 const Form = () => {
+  const toast = useToast()
   return (
     <form>
       <InputForm label={'Nombre'} placeholder={'ingrese su nombre'}/>
@@ -14,7 +16,19 @@ const Form = () => {
         resize={'none'}
         required={true}
       />
-      <input type="submit" value="ENVIAR" className='button-enviar'/>
+      <input type="submit" value="ENVIAR" className='button-enviar'
+        onClick={(e) => {
+          e.preventDefault()
+          const examplePromise = new Promise((resolve) => {
+          setTimeout(() => resolve(200), 3000)
+        })
+        toast.promise(examplePromise,{
+          success: { title: 'Mensaje Enviado', description: 'Nos pondremos en contacto muy pronto' },
+          error: { title: 'Promise rejected', description: 'Something wrong' },
+          loading: { title: 'Enviando Mensaje'},
+        })
+        }}
+      />
     </form>
   );
 };

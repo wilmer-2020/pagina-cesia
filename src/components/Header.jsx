@@ -1,12 +1,16 @@
 import IconShop from "../layouts/IconShop";
 import { Input } from '@chakra-ui/react';
 import { useState} from "react";
+import IphoneHeader from "../layouts/IphoneHeader";
+import ModalWhatsapp from "../layouts/Modal";
+
+
 
 const Header = () => {
     const [colorNav, setColorNav] = useState('');
 
     const changeColor = () => {
-        if (window.scrollY >= 270) {
+        if (window.scrollY >= 30) {
           setColorNav('#0c0b0b')
         }else{
           setColorNav('transparent')
@@ -35,6 +39,13 @@ const Header = () => {
                 <a href="#"><IconShop/></a>
             </ul>
         </nav>
+        <div className="text-header">
+        <h3>NECTEC</h3>
+        <p>Desde los últimos modelos de las marcas más reconocidas hasta opciones asequibles y de calidad, nuestra selección de teléfonos inteligentes es incomparable. Ya sea que busques características avanzadas, un diseño elegante o un rendimiento excepcional, tenemos el teléfono perfecto para ti</p>
+        <ModalWhatsapp/>
+        </div>
+        <IphoneHeader/>
+
     </header>
  </>
     
