@@ -9,7 +9,7 @@ const Form = () => {
     <form className='form'>
       <InputForm label={'Nombre'} placeholder={'ingrese su nombre'}/>
       <InputForm label={'telefono'} placeholder={'ingrese su telefono'}/>
-      <SelectForm label={"Sucursal"} option1={'NECTEC-Comayagua'} option2={'NECTEC-La Paz'}/>
+      <SelectForm label={"Sucursal"} option1={'NETTEC-Comayagua'} option2={'NETTEC-La Paz'}/>
       <Textarea
         placeholder='Escriba su mensaje'
         size='sm'

@@ -40,8 +40,12 @@ const Header = () => {
             </ul>
         </nav>
         <div className="text-header">
-        <h3>NECTEC</h3>
-        <p>Desde los últimos modelos de las marcas más reconocidas hasta opciones asequibles y de calidad, nuestra selección de teléfonos inteligentes es incomparable. Ya sea que busques características avanzadas, un diseño elegante o un rendimiento excepcional, tenemos el teléfono perfecto para ti</p>
+        <h3>NETTEC</h3>
+        <p>Desde los últimos modelos de las marcas más reconocidas,
+         nuestra selección de teléfonos es incomparable. 
+        Ya sea que busques características avanzadas,
+         un diseño elegante o un rendimiento excepcional, 
+         tenemos el teléfono perfecto para ti a los mejores precios de la zona</p>
         <ModalWhatsapp/>
         </div>
         <IphoneHeader/>

@@ -10,7 +10,7 @@ const SelectForm = ({label,option1,option2}) => {
       <div className="form-group">
       <FormControl>
   <FormLabel>{label}</FormLabel>
-  <Select placeholder='Seleccione la sucrusal'>
+  <Select placeholder='Seleccione la sucursal'>
     <option>{option1}</option>
     <option>{option2}</option>
   </Select>

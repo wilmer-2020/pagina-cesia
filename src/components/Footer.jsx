@@ -61,7 +61,7 @@ const Footer = () => {
      </section>
 
      <section className="footer-derechos">
-      <p>2024|Todos los derechos reservados Wilmer Castellanos</p>
+      <p>2024|Todos los derechos reservados Cesia Lizardo</p>
      </section>
 
     </footer>
