@@ -20,7 +20,7 @@ const ModalWhatsapp = () => {
   const getData = (e) =>{
     setText(e.target.value)
   }
-  const URL=`https://wa.me/96321981?text=${text} `
+  const URL=`https://wa.me/32154423?text=${text} `
   const initialRef = useRef(null)
   const finalRef = useRef(null)
 

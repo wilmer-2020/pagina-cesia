@@ -33,7 +33,7 @@ const Footer = () => {
 
         <div className="social">
         <img src={iconWhatsApp} alt="" className="icon-social"/>
-          <a href="https://api.whatsapp.com/send?phone=96321981" target="_blacnk">+504 98431209</a>
+          <a href="https://api.whatsapp.com/send?phone=32154423" target="_blacnk">+504 3215-4423</a>
         </div>
 
       </div>
@@ -48,12 +48,12 @@ const Footer = () => {
         
         <div className="social">
         <img src={iconPhone} alt="" className="icon-encuentranos"/>
-          <p >+504 33557712</p>
+          <p >+504 3215-4423</p>
         </div>
 
         <div className="social">
         <img src={iconEmail} alt="" className="icon-encuentranos"/>
-          <a href="mailto:aldredomontes1970@gmail.com" style={{color:"#a09787"}}>brisasdelcampo@gmail.com</a>
+          <a href="mailto:nectec@gmail.com" style={{color:"#a09787"}}>nettec@gmail.com</a>
         </div>
         
       </div>
